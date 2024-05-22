@@ -9,22 +9,20 @@ public class Samonto_Dara {
 		
 		try (Scanner input = new Scanner(System.in)) {
 					
-	        //series_1*1 + 2*2 + 3*3 + .................+n তম পদ
-	        int q, multiplication = 0;
+	        //series_1*2*3*4*5*..........................*m
+	        long m, multiplication = 1;
 	        
 	        System.out.print("Enter the last number : ");
-	        q = input.nextInt();
-
-	        for(int i = 1; i <= q; i=i+1){
-	        	
-	            System.out.print(i+"x"+i+" ");
-	            multiplication = multiplication + i*i;
+	        m = input.nextInt();
+ 
+	        for(long i = 1; i <= m; i++){
+	            System.out.print(i+" ");
+	            multiplication = multiplication * i;
 	        }
 	        System.out.println();
-	        System.out.println(" ="+multiplication); 
+	        System.out.println(m+" টি সংখ্যার গুণফল"+" ="+multiplication);
 		}
-		
-		
+			
 	}
 
 }
