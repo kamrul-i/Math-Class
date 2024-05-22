@@ -9,12 +9,19 @@ public class Samonto_Dara {
 			
 			    
 			//namota magic.............................................
-	        int num;  
-	        System.out.print("Enter any number : ");
-	        num = input.nextInt();
+	        int m, n;
+	        System.out.print("Enter initial/first number : ");
+	        m = input.nextInt();
 	        
-	        for (int i = 1; i <= 10; i++) {
-	            System.out.println(num + " x " + i + " = " + num * i);
+	        System.out.print("Enter final/last number : ");
+	        n = input.nextInt();
+	        
+	        for (int i = m; i <= n; i++) {
+	        	
+	            for (int j = 1; j <= 10; j++) {
+	                System.out.println(i + "x" + j + " = " + i * j);
+	            }
+	            System.out.println("\n");
 	        }	      
 	        //---------------------------------------------------------
           
