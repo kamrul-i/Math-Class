@@ -8,20 +8,22 @@ public class Samonto_Dara {
 		
 		
 		try (Scanner input = new Scanner(System.in)) {
-			
-			//series_1*3*5*7*..............*n
-			long n, multipli = 1;
+			    
+			//series_1.5 * 2.5 * 3.5 * .................*p
+			double p, into = 1;
 			System.out.print("Enter the last number : ");    
-			n = input.nextInt();
-   
-			for(long i = 1; i <= n; i=i+2){
-				
-				System.out.print(i+" ");    
-				multipli = multipli * i; 
-			}
-			System.out.println();
-			System.out.println(n+" পর্যন্ত বিজোড় সংখ্যাগুলোর গুণফল ="+multipli);      
+			p = input.nextDouble();	
+			
+			for(double i=1.5; i<=p; i++){
+		           
+				System.out.println(i+" ");		           
+				into = into * i;		       
+			}		       
+			System.out.printf("\n");
+			System.out.print(p+" এর মধ্যে দশমিক সংখ্যাগুলোর গুণফল =");
+			System.out.printf("%.2f",into);         
 		}
+		//---------------------------------------------------------
 			
 	}
 
