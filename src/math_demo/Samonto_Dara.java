@@ -9,19 +9,20 @@ public class Samonto_Dara {
 		
 		try (Scanner input = new Scanner(System.in)) {
 					
-	        //series_1+3+5+................................+n তম পদ
-	        int n, num = 0;
+	        //series_1.5+2.5+3.5+...............+n তম পদ 
+	        double p, number = 0;
 	        
 	        System.out.print("Enter the last number : ");
-	        n = input.nextInt();
+	        p = input.nextDouble();
 	        
 	        
-	        for(int i = 1; i <= n; i=i+2){
-	            num = num + i;
+	        for(double i=1.5; i<=p; i++){
+	        	
+	            number = number + i;
 	            System.out.print(i+" ");
 	        }
 	        System.out.println();
-	        System.out.println(" ="+num);
+	        System.out.println(" ="+number);
 		}
 		
 		
